@@ -1,8 +1,7 @@
 def prime?(num)
-  false if num < 2
-  (2...num).each do |factor|
-    if (num % factor).zero?
-      return false
-    end
-  true
-end
+  if num > 2 && num % num == 0
+    puts true
+  else
+    puts false
+  end
+  
